@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component} from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
 
 
@@ -30,6 +29,8 @@ export class CreateuserComponent {
               console.log('User added event received:', newUser);
             });
             this.resetForm();
+      }else{
+        
       }
   }
 
