@@ -1,7 +1,5 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
-import { Observable } from 'rxjs';
-import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-veiw-users',
@@ -11,12 +9,9 @@ import { SharedService } from '../shared.service';
 export class VeiwUsersComponent {
   
   users: any[] = [];
-  showViewUsers: boolean = false;
 
-  constructor(private apiService: ApiServiceService, private sharedService: SharedService) {
-    this.sharedService.showViewUsers$.subscribe((show) => {
-      this.showViewUsers = show;
-    });
+  constructor(private apiService: ApiServiceService) {
+    
   }
 
   ngOnInit(): void {
