@@ -1,5 +1,5 @@
 # TakeUsers
-Simple Angular App with a Json serve Backeng. For practice.
+Simple Angular App with a Json server Backend. For practice.
 
 # Frontend Requirements
 
